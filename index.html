@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alpha Airdrop Sniper</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        :root {
+            --tg-theme-bg-color: #0f0f0f;
+            --tg-theme-text-color: #ffffff;
+            --tg-theme-button-color: #0088cc;
+            --tg-theme-button-text-color: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--tg-theme-bg-color);
+            color: var(--tg-theme-text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: var(--tg-theme-button-color);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s ease;
+        }
+
+        .card:active {
+            transform: scale(0.98);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .badge-verified { background: #1b5e20; color: #4caf50; }
+        .badge-hot { background: #b71c1c; color: #f44336; }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            background-color: var(--tg-theme-button-color);
+            color: var(--tg-theme-button-text-color);
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            opacity: 0.5;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🚀 Alpha Sniper</h1>
+        <p>Verified Web3 Opportunities</p>
+    </div>
+
+    <div class="card">
+        <span class="badge badge-verified">● Verified</span>
+        <div class="title">Blum Crypto</div>
+        <p class="description">The next big hybrid exchange. Farm points daily to qualify for the upcoming massive airdrop.</p>
+        <a href="https://t.me/blum/app?startapp=ref_PUNE_ID_TAU" class="button">START FARMING</a>
+    </div>
+
+    <div class="card">
+        <span class="badge badge-hot">● Hot</span>
+        <div class="title">Major Bot</div>
+        <p class="description">Become a top Major in the Telegram ecosystem. High priority airdrop for active users.</p>
+        <a href="https://t.me/major/start?startapp=PUNE_ID_TAU" class="button">CLAIM RANK</a>
+    </div>
+
+    <div class="footer">
+        © 2026 Alpha Signals Bot • Powered by TON
+    </div>
+
+    <script>
+        // Inițializare Telegram WebApp
+        const tg = window.Telegram.WebApp;
+        tg.ready();
+        tg.expand(); // Deschide aplicația pe tot ecranul
+
+        // Opțional: Setează culoarea header-ului pentru a se potrivi cu tema
+        tg.setHeaderColor('secondary_bg_color');
+    </script>
+</body>
+</html>
